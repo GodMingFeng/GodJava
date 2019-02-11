@@ -1,7 +1,17 @@
+import java.io.IOException;
+
 public class Main {
 
+    public static String Lock = "LOCK";
+
     public static void main(String[] args) {
-        System.out.println("helloWorld!");
+        LeetCode leetCode = new LeetCode();
+        RandomPic randomPic = new RandomPic();
+        try {
+            randomPic.random();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 
